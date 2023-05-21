@@ -10,7 +10,7 @@ export const Login = () => {
 
         let values = [email, password];
 
-        axios.post("https://crud-system.herokuapp.com/login", values).then((res) => {
+        axios.post("https://crud-system-node.herokuapp.com/login", values).then((res) => {
             alert("Login Successfully");
             window.location.reload()
         }).catch((err) => {

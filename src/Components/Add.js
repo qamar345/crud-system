@@ -10,7 +10,7 @@ export const Add = () => {
 
         let values = [name, email, password];
 
-        axios.post("https://crud-system.herokuapp.com/add", values).then((res) => {
+        axios.post("https://crud-system-node.herokuapp.com/add", values).then((res) => {
             alert("Account Created Successfully");
             window.location.reload();
         }).catch((err) => alert(err));
